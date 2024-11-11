@@ -1,4 +1,4 @@
-from beverage import Beverage as BB
+from Beverage import Beverage as BB
 class BendingMachine:
     def __init__(self):
         self.__money = 0
@@ -10,6 +10,13 @@ class BendingMachine:
     def InputMoney(self, money:int):
         self.__money = money
         print(self.__money + "원")
+
+    def choiceMenu(self):
+        selectedMenu = input("메뉴를 선택하세요 : ")
+
+        result = selectedMenu in self.__menu.keys()
+
+        return result, selectedMenu
 
     def printMenu(self):
         for key, value in self.Menu.items():

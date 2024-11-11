@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/bendingMachine.iml" filepath="$PROJECT_DIR$/.idea/bendingMachine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/BendingMachine.iml" filepath="$PROJECT_DIR$/.idea/BendingMachine.iml" />
     </modules>
   </component>
 </project>

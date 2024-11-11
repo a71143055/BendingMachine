@@ -1,4 +1,4 @@
-from bendingMachine import BendingMachine as BM
+from BendingMachine import BendingMachine as BM
 class Beverage:
     def __init__(self, name, price, count):
         self.__name = name
