@@ -1,11 +1,15 @@
 from beverage import Beverage as BB
 class BendingMachine:
-    def __init__(self, money):
-        self.__money = money
+    def __init__(self):
+        self.__money = 0
         self.__menu = {
             BB("콜라", 1000, 10),
             BB("사이다", 1000, 10)
         }
+
+    def InputMoney(self, money:int):
+        self.__money = money
+        print(self.__money + "원")
 
     def printMenu(self):
         for key, value in self.Menu.items():
