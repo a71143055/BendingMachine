@@ -2,10 +2,18 @@ from beverage import Beverage as BB
 class BendingMachine:
     def __init__(self, money):
         self.__money = money
-        self.__menu = []
+        self.__menu = {
+            BB("콜라", 1000, 10),
+            BB("사이다", 1000, 10)
+        }
 
-    def setMenu(self, name, price, count):
-        self.__menu += BB(name, price,count)
+    def printMenu(self):
+        for key, value in self.Menu.items():
 
-    def getMenu(self):
-        return self.__menu
+            str = "{0}번 : {1} \t {2}원 {3}".format(
+                key,
+                value.getName(),
+                value.getPrice(),
+                "" if value.getCount() > 0 else "품절"
+            )
+            print(str+"\n")
