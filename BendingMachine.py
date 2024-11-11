@@ -12,10 +12,8 @@ class BendingMachine:
         print(self.__money + "원")
 
     def choiceMenu(self):
-        selectedMenu = input("메뉴를 선택하세요 : ")
-
+        selectedMenu = int(input("메뉴를 선택하세요 : "))
         result = selectedMenu in self.__menu.keys()
-
         return result, selectedMenu
 
     def printMenu(self):
