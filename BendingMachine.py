@@ -38,3 +38,7 @@ class BendingMachine:
                 "" if value.getCount() > 0 else "품절"
             )
             print(str+"\n")
+
+    def ReturnMoney(self):
+        tmp = self.__money
+        self.__money = 0
