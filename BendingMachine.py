@@ -9,7 +9,7 @@ class BendingMachine:
 
     def InputMoney(self, money:int):
         self.__money = money
-        print(self.__money + "원")
+        print(str(self.__money) + "원")
 
     def choiceMenu(self):
         selectedMenu = int(input("메뉴를 선택하세요 : "))
@@ -29,7 +29,7 @@ class BendingMachine:
         isContinue = False
 
     def printMenu(self):
-        for key, value in self.Menu.items():
+        for key, value in self.__menu.items():
 
             str = "{0}번 : {1} \t {2}원 {3}".format(
                 key,
