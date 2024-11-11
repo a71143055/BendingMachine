@@ -6,3 +6,6 @@ class BendingMachine:
 
     def setMenu(self, name, price, count):
         self.__menu += BB(name, price,count)
+
+    def getMenu(self):
+        return self.__menu
