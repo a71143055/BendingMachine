@@ -15,7 +15,7 @@ class BendingMachine:
         self.__name = name
         self.__money = money
         print("이름 :" + self.__name)
-        print("잔액 :" + self.__money)
+        print("잔액 :" + str(self.__money))
 
     def choiceMenu(self, selectedMenu):
         try:
