@@ -2,7 +2,7 @@ from BendingMachine import BendingMachine
 
 if __name__ == "__main__":
     BM = BendingMachine()
-    BM.InputMoney(10000)
+    BM.InputMoney("정구영",10000)
 
     while(True):
         BM.printMenu()
