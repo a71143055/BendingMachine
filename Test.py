@@ -7,6 +7,6 @@ if __name__ == "__main__":
     isOk = False
     while(isOk == False):
         isOk, menu = BM.choiceMenu()
-    print("{0}번 : {1}".format(isOk,BM.choiceMenu()))
+    print("{0}번 : {1}".format(menu,BM.choiceMenu()))
     BM.OutProduct(menu)
     BM.ReturnMoney()
