@@ -14,11 +14,12 @@ class BendingMachine:
     def InputMoney(self, name: str, money: int):
         self.__name = name
         self.__money = money
-
+        print("이름 :" + self.__name)
+        print("잔액 :" + self.__money)
 
     def choiceMenu(self, selectedMenu):
         try:
-            if selectedMenu not in self.__menu and selectedMenu != 0:
+            if selectedMenu not in self.__menu:
                 print("유효하지 않은 메뉴입니다.")
                 return False, None
             if self.__money < self.__menu[selectedMenu].getPrice():
