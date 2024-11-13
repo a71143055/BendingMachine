@@ -10,7 +10,6 @@ class BendingMachine:
 
     def InputMoney(self, money: int):
         self.__money = money
-        print(str(self.__money) + "원")
 
     def choiceMenu(self):
         try:
