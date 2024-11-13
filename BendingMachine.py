@@ -3,6 +3,7 @@ from Beverage import Beverage as BB
 class BendingMachine:
     def __init__(self):
         self.__money = 0
+        self.__name = ""
         self.__menu = {
             1: BB("콜라", 1000, 10),
             2: BB("사이다", 1000, 10),
@@ -10,8 +11,10 @@ class BendingMachine:
             4: BB("밀크티", 1000, 10)
         }
 
-    def InputMoney(self, money: int):
+    def InputMoney(self, name: str, money: int):
+        self.__name = name
         self.__money = money
+
 
     def choiceMenu(self, selectedMenu):
         try:

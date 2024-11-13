@@ -397,7 +397,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731472558826</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="BendingMachine">
+      <option name="closed" value="true" />
+      <created>1731472861601</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1731472861601</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
