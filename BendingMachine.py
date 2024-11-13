@@ -18,7 +18,8 @@ class BendingMachine:
                 print("유효하지 않은 메뉴입니다.")
                 return False, None
             if selectedMenu == 0:
-                return 0, None
+                print("종료합니다.")
+                return 0, 0
             if self.__money < self.__menu[selectedMenu].getPrice():
                 print("금액이 부족합니다.")
                 return False, selectedMenu
