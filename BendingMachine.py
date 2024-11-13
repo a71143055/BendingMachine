@@ -37,8 +37,10 @@ class BendingMachine:
                 value.getPrice(),
                 "" if value.getCount() > 0 else "품절"
             )
-            print(str+"\n")
+            print(str)
 
     def ReturnMoney(self):
-        tmp = self.__money
+        tmp = 0
+        tmp += self.__money
         self.__money = 0
+        print("잔돈 : " + str(tmp) + "원")
