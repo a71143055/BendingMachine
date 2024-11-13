@@ -5,7 +5,9 @@ class BendingMachine:
         self.__money = 0
         self.__menu = {
             1: BB("콜라", 1000, 10),
-            2: BB("사이다", 1000, 10)
+            2: BB("사이다", 1000, 10),
+            3: BB("밀키스", 1000, 10),
+            4: BB("밀크티", 1000, 10)
         }
 
     def InputMoney(self, money: int):
