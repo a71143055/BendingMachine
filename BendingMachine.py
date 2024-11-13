@@ -14,7 +14,7 @@ class BendingMachine:
     def choiceMenu(self):
         try:
             selectedMenu = int(input("메뉴를 선택하세요(0은 종료): "))
-            if selectedMenu not in self.__menu:
+            if selectedMenu not in self.__menu and selectedMenu != 0:
                 print("유효하지 않은 메뉴입니다.")
                 return False, None
             if selectedMenu == 0:
