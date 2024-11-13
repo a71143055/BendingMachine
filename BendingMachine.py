@@ -18,6 +18,7 @@ class BendingMachine:
             if selectedMenu not in self.__menu:
                 print("유효하지 않은 메뉴입니다.")
                 return False, None
+                quit
             if self.__money < self.__menu[selectedMenu].getPrice():
                 print("금액이 부족합니다.")
                 return False, selectedMenu
@@ -44,3 +45,4 @@ class BendingMachine:
     def ReturnMoney(self):
         print("잔돈: " + str(self.__money) + "원")
         self.__money = 0
+
