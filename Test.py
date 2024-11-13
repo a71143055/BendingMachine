@@ -4,7 +4,7 @@ if __name__ == "__main__":
     BM = BendingMachine()
     BM.InputMoney(10000)
 
-    while(True):
+    while(BM.ReturnMoney() > 0):
         BM.printMenu()
         isOk = False
         while not isOk:

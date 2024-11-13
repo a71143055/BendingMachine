@@ -44,5 +44,5 @@ class BendingMachine:
 
     def ReturnMoney(self):
         print("잔돈: " + str(self.__money) + "원")
-        self.__money = 0
+        return self.__money
 
